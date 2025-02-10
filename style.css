@@ -1,0 +1,66 @@
+
+
+/* Seção Hero */
+#hero {
+    background-color: #f0f0f0;
+    background-image: url("img/f1.png");
+    background-repeat: no-repeat;
+    background-position: top 100% right 30%;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 200px;
+}
+
+/* Texto principal */
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.stats h3 {
+    text-align: left;
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 0.01;
+}
+
+.stats p {
+    font-size: 14px;
+    color: #666;
+}
+
+.shop-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+}
