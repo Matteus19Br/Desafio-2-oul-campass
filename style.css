@@ -64,3 +64,57 @@
     text-decoration: none;
     margin-top: 15px;
 }
+.divider {
+    width: 1px;
+    height: 70px;
+    background: #ccc;
+    margin-bottom: 50px;
+}
+
+.star {
+    position: absolute;
+}
+
+/* Posicionamento */
+.star1 {
+    width: 104px;
+    height: 104px;
+    top: 30%;
+    right: 7%;
+}
+
+.star2 {
+    width: 56px;
+    height: 56px;
+    bottom: 38%;
+    left: 50%;
+}
+.brand-bar {
+    background-color: black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand-bar div {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+}
+
+.brand-bar .prada {
+    font-weight: bold; /* PRADA em negrito */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    .brand-bar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
