@@ -3,7 +3,7 @@
 /* Seção Hero */
 #hero {
     background-color: #f0f0f0;
-    background-image: url("img/f1.png");
+    background-image: url("img/fundo.png");
     background-repeat: no-repeat;
     background-position: top 100% right 30%;
     height: 90vh;
@@ -117,4 +117,118 @@
         gap: 10px;
         text-align: center;
     }
+}
+/* Seção New Arrivals */
+#novidades {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+#novidades h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Container dos produtos */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos produtos */
+.product {
+    width: 22%;
+    min-width: 250px;
+    background: #f8f8f8;
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.product img {
+    width: 100%;
+    max-height: 320px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Avaliação */
+.rating {
+    font-size: 14px;
+    color: #565451;
+}
+
+/* Preços */
+.price {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.discount {
+    background: #fbbcb891;
+    color: rgb(250, 52, 52);
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+/* Botão "View All" */
+.view-all {
+    margin-top: 60px;
+    padding: 12px 70px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.view-all:hover {
+    background: black;
+    color: white;
+    border: none;
+}
+
+.divider1 {
+    width: 1500px;
+    height: 1px;
+    background: #ccc;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#top-selling {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+#top-selling h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
