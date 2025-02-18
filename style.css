@@ -232,3 +232,353 @@
     margin-top: 20px;
     margin-bottom: 40px;
 }
+#footer {
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff 10%, #f0f0f0 10%);
+
+    & footer {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    
+        & .newsletter {
+            width: 100%;
+            background-color: var(--black-color);
+            color: var(--white-color);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 60px;
+    
+            & h1 {
+                font-size: clamp(32px, 2vw, 40px);
+                margin-bottom: 30px;
+            }
+    
+            & form {
+                width: 95%;
+                margin: 0 auto;
+                font-size: clamp(14px, 3vw, 16px);
+    
+                & .email-container {
+                    width: 100%;
+                    height: 42px;
+                    background-color: var(--white-color);
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+        
+                    & figure {
+                        margin-right: 15px;
+                        height: 24px;
+        
+                        & img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+    
+                    & input {
+                        border: none;
+                        height: 90%;
+                        outline: none;
+                        font-family: var(--font-primary);
+                        font-size: clamp(14px, 2vw, 16px);
+                        width: 100%;
+                    }
+                }
+    
+                & button {
+                    width: 100%;
+                    height: 42px;
+                    background-color: var(--white-color);
+                    border-radius: 20px;
+                    padding: 0 15px;
+                    margin-top: 5px;
+                    border: none;
+                    font-family: var(--font-primary);
+                    font-size: clamp(14px, 2vw, 16px);
+                    font-weight: 600;
+                }
+            }
+        }
+  
+        & .informations {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            & .company-information {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                & h1 {
+                    font-size: clamp(29px, 2vw, 34px);
+                }
+        
+                & p {
+                    opacity: 60%;
+                    font-size: 14px;
+                }
+        
+                & .socials {
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+            
+                    & li {
+                        border: 2px solid #00000033;
+                        background-color: var(--white-color);
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+            
+                        & figure {
+                            height: 16px;
+                            & img {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+            
+                    & li:nth-child(2) {
+                        background-color: var(--black-color);
+                    }
+                }
+            }
+    
+            & .info-footer {
+                font-size: clamp(14px, 2vw, 16px);
+                width: 50%;
+                margin-bottom: 15px;
+    
+                & h2 {
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-size: clamp(14px, 2vw, 16px);
+                    margin-bottom: 15px;
+                }
+    
+                & li {
+                    margin-bottom: 15px;
+                    opacity: 60%;
+                }
+            }
+    
+            & .faq,
+            .resources {
+                padding-bottom: 30px;
+                border-bottom: 2px solid #0000000e;
+            }
+        }
+  
+        & .last {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-top: 20px;
+            margin-bottom: 70px;
+  
+            & p {
+                text-align: center;
+                font-size: 14px;
+                opacity: 60%;
+                margin-bottom: 10px;
+            }
+  
+            & .payments-methods {
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+    
+                & figure {
+                    height: 26px;
+                    & img {
+                        width: 40px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.88px) {
+    #footer {
+        & footer {
+            width: 85%;
+            flex-wrap: wrap;
+  
+            & .newsletter {
+                display: flex;
+                padding: 40px 60px;
+                justify-content: space-between;
+                align-items: center;
+  
+                & h1 {
+                    width: 50%;
+                }
+  
+                & form {
+                    display: flex;
+                    flex-direction: column;
+                    justify-self: end;
+                    margin: 0;
+                    width: 35%;
+                }
+            }
+  
+            & .informations {
+                border-bottom: 2px solid #0000000e;
+                & .company-information {
+                    width: 20%;
+                    margin-right: 8%;
+                }
+    
+                & .info-footer {
+                    width: 18%;
+                }
+    
+                & .resources {
+                    width: 13%;
+                    margin-left: 5%;
+                    border: none;
+                }
+    
+                & .faq {
+                    border: none;
+                }
+            }
+        }
+  
+        & .last {
+            flex-direction: row !important;
+            justify-content: space-between !important;
+        }
+    }
+}
+.container {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+}
+.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0; 
+    padding: 0;
+}
+.item {
+    border-radius: 10px;
+    position: relative;
+    margin: 0; 
+    padding: 0;
+    overflow: hidden;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.item .image1 {
+    width: 407px;
+    height: 289px;
+}
+
+.item .image2 {
+    width: 684px;
+    height: 289px;
+}
+
+.item .image3 {
+    width: 684px;
+    height: 289px;
+}
+
+.item .image4 {
+    width: 407px;
+    height: 289px;
+}
+
+.item span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    color: black;
+    margin: 0;
+    box-sizing: border-box;
+}
+.testistar {
+    margin-top: 50px;
+    background: #f8f8f8;
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+.testistar h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+}
+.testistar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+}
+.testistar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    flex: 0 0 auto;
+}
+.testistar h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stars {
+    font-size: 28px;
+    color: gold;
+    margin: 5px 0;
+}
