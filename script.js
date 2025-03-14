@@ -35,3 +35,40 @@ var FormularioValidação = function () {
         }, 3000);
     });
 };
+
+function adicionarProduto(nome, preco, imagem) {
+    try {
+        // Criando um objeto com os detalhes do produto
+        let produto = {
+            nome: nome,
+            preco: preco,
+            imagem: imagem
+        };
+
+        // Salvando no Local Storage para ser usado na próxima página
+        localStorage.setItem("produtoSelecionado", JSON.stringify(produto));
+
+        // Redirecionando para product.html
+        window.location.href = "product.html";
+    } catch (error) {
+        alert("Erro ao adicionar produto!");
+        console.error("Erro:", error);
+    }
+}
+
+
+window.onload = function () {
+    window.adicionarProduto = async function (name, price, imageUrl) {
+        const response = await fetch('http://localhost:3000/api/produtos', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, price, imageUrl }),
+        });
+
+        if (response.ok) {
+            window.location.href = 'product.html';
+        } else {
+            alert('Erro ao adicionar produto!');
+        }
+    };
+};
