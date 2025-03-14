@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/produtos
+Content-Type: application/json
+
+{
+  "nome": "Tênis Nike",
+  "preco": 299.99,
+  "descricao": "Tênis esportivo confortável"
+}

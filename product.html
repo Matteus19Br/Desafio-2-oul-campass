@@ -1,0 +1,65 @@
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adicionar Produto</title>
+</head> 
+<body>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    .top-bar { background: black; color: white; text-align: center; padding: 10px; font-size: 14px; position: relative; }
+    .top-bar a { color: white; text-decoration: underline; }
+    .close-btn { position: absolute; right: 15px; top: 10px; color: white; cursor: pointer; }
+    header { background: white; display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; border-bottom: 1px solid #ddd; }
+    .logo { font-size: 24px; font-weight: bold; margin-right: 30px; } /* Adiciona espaçamento à direita da logo */
+    .nav-links { display: flex; gap: 15px; }
+    .nav-links a { text-decoration: none; color: black; }
+    .search-bar { flex: 1; margin: 0 20px; }
+    .search-bar input { width: 100%; padding: 10px; border-radius: 20px; border: 1px solid #ccc; }
+    .icons { display: flex; gap: 15px; font-size: 18px; }
+</style>
+</head>
+<body>
+<div class="top-bar" id="topBar"> <!-- Barra de Promoção -->
+    Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a>
+    <span class="close-btn" onclick="document.getElementById('topBar').style.display='none'">&times;</span>
+</div>
+<header> <!-- Cabeçalho do Site -->
+    <div class="logo">SHOP.CO</div>
+    <nav class="nav-links">
+        <a href="#">Shop</a>
+        <a href="#">On Sale</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Brands</a>
+    </nav>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for products...">
+    </div>
+    <div class="icons">
+        🛒
+        👤
+    </div>
+</header>
+  <h2>Adicionar Novo Produto</h2>
+
+  <form id="productForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="description">Descrição:</label>
+    <input type="text" id="description" name="description" required><br><br>
+
+    <label for="price">Preço:</label>
+    <input type="number" id="price" name="price" required><br><br>
+
+    <label for="imageUrl">URL da Imagem:</label>
+    <input type="text" id="imageUrl" name="imageUrl" required><br><br>
+
+    <button type="submit">Adicionar Produto</button>
+  </form>
+</body>
+</html>
+
